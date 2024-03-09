@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodSoft Task 1 - Landing Page</title>
+    <link rel="stylesheet" href="/styles/codsoft-landing-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">                 
+            <div class="conatainer">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="/images/logo(5).jpg">
+                    <p> <b> Connect... </b></p> 
+                    <nav>
+                        <ul id="sidemenu">
+                            <li><a href="">HOME</a></li>
+                            <li id="selectField"><a id="selectText">SERVICES &#x25BE;</a>                                                                
+                                    <ul class="list dropdown"  id="hide">
+                                        <li class="options"><a href="">All</a></li>
+                                        <li class="options"><a href="">Practical Auditing Tips</a></li>
+                                        <li class="options"><a href="">Task Tips</a></li>
+                                        <li class="options"><a href="">Accounting Terms</a></li>
+                                        <li class="options"><a href="">Common Pitfall in Accounting</a></li>
+                                        <li class="options"><a href="">Practical Accounting</a></li>
+                                        <li class="options"><a href="">Job and Career Management</a></li>
+                                    </ul>                               
+                            </li>
+                            <li><a href="">LEARNING</a></li>
+                            <li><a href="">OUR TEAM</a></li>
+                            <li><a href="">COURSES</a></li>
+                            <li><a href="">LOGIN</a></li>
+                            <i onclick="closemenu()" class="fa fa-times"></i>
+                        </ul>    
+                        <i class="fa fa-bars" onclick="openmenu()"></i>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Cards -->
+    <div class="card-container">
+        <div class="sub-container">
+            <div class="card">
+                <h2>Practial <br> Accounting <br> Academy (PAA) </h2>
+                <p>For Undergraduates, Fresh graduates, small business owners, non-accountants </p>    
+                <a class="read-more">Read More</a>
+            </div>
+            <div class="card">
+                <h2>Practial <br> Auditing <br> Academy (PAUDA) </h2>
+                <p>This e-learning platform's intuitive design and flexible learning pace equipped me with valuable skills, setting me apart in my studies. </p>    
+                <a class="read-more">Read More</a>
+            </div>
+        </div>        
+    </div>
+
+    <!-- Testimonials -->
+    <div class="testimonial">
+        <div class="small-container">
+            <h2>Testimonials</h2>
+            <hr class="testimonial-hr">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>                       
+                    <p>This e-learning platform revolutionized my learning journey with its user-friendly interface, engaging content, and flexible study options.</p>
+                    <img src="/images/user-1.png" alt="">
+                    <h3>Sean Parker</h3>
+                    <h3> (Student) </h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>                       
+                    <p>As a tutor, this platform elevates my teaching with a seamless interface, rich resources, and a supportive community, enabling tailored and effective lessons.</p>
+                    <img src="/images/user-2.png" alt="">
+                    <h3>Mike Smith</h3>
+                    <h3> (Tutor) </h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>                       
+                    <p>This e-learning platform made my studies a breeze with its intuitive design, quality content, and the freedom to learn at my own pace. I've gained valuable skills and knowledge that have truly set me apart.</p>
+                    <img src="/images/user-3.png" alt="">
+                    <h3>Mabel Joe</h3>
+                    <h3> (Student) </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">  
+        <img src="/images/logo(5).jpg" class="footer-img">
+            <h3>Connect...</h3>      
+        <h2>Follow Us <i class="fa fa-user-plus"></i> </h2>
+            <ul>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Linkedln</a></li>
+            </ul>
+        <h2>Contact Us <i class="fa fa-address-book"></i> </h2>
+        <ul>
+            <li><a href="">ObomheseR@gmail.com</a></li>
+                <li><a href="">+234 - 000 - 000 - 234 </a></li>
+        </ul>
+        <div class="newsletter">
+            <h2>Our Daily Newsletter <i class="fa fa-newspaper"></i></h2>            
+            <input type="email" placeholder="Enter Your Mail: " class="footer-input" required>
+            <button class="footer-button" type="submit">Submit</button required>
+        </div>
+        <hr class="hr">
+        <div class="copyright">            
+            <p class="p"> © Copyright - 2024 All Rights Reserved @ <a href="" style="font-size: 12px;"><span style="color: red;">Authentix.</a></span></p>
+        </div>
+    </div>
+
+<script>
+    const sidemenu = document.getElementById("sidemenu");
+    const bars = document.getElementsByClassName("fa-bars");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+ </script>
+</body>
+</html>
